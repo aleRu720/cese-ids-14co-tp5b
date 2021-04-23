@@ -25,23 +25,27 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+//! Constante con los datos del alumno Esteban Volentini
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+//! Constante con los datos del alumno Alejandro Rougier
 static const struct alumno_s ALEJANDRO_ROUGIER = {
     .apellidos = "ROUGIER",
     .nombres = "Omar Alejandro",
     .documento = "22.661.059",
 };
 
+//! Constante del tipo alumno_t que contiene un arreglo de punteros a las estructuras de todos los alumnos
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &ALEJANDRO_ROUGIER,
 };
 
+//! Constante entera que indica el número de alumnos que hay 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
